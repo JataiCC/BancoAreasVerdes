@@ -16,7 +16,7 @@
             height: 512px;
         }
         </style>
-        <title></title>
+        <title>Banco de Áreas Verdes</title>
     </head>
     <body>
         <div id="map">
@@ -38,7 +38,7 @@
             zoomControl:true, maxZoom:13, minZoom:1
         }).fitBounds([[-19.085292935016817,-65.77910539678705],[-4.112681783306545,-34.747634833340456]]);
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        map.attributionControl.setPrefix('<a href="https://github.com/JataiCC" target="_blank">Jataí Capital e Conservação</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
         var bounds_group = new L.featureGroup([]);
